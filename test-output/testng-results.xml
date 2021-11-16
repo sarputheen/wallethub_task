@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Practice Suite" duration-ms="151019" started-at="2021-11-16T19:42:10Z" finished-at="2021-11-16T19:44:41Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test Basics 1" duration-ms="151019" started-at="2021-11-16T19:42:10Z" finished-at="2021-11-16T19:44:41Z">
+      <class name="com.wallethub.testfactory.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="setUpClass" is-config="true" duration-ms="639" started-at="2021-11-16T19:42:10Z" finished-at="2021-11-16T19:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="driverInit(java.lang.String)[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="driverInit" is-config="true" duration-ms="2392" started-at="2021-11-16T19:42:10Z" finished-at="2021-11-16T19:42:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInit -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="runScenario" duration-ms="94891" started-at="2021-11-16T19:42:13Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-16T19:43:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user, I want to add the review for an Insuarance company and view it on the profile screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add Review]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="teardown" is-config="true" duration-ms="246" started-at="2021-11-16T19:43:48Z" finished-at="2021-11-16T19:43:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="driverInit(java.lang.String)[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="driverInit" is-config="true" duration-ms="1524" started-at="2021-11-16T19:43:48Z" finished-at="2021-11-16T19:43:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInit -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="runScenario" duration-ms="50619" started-at="2021-11-16T19:43:49Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-16T19:44:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user, I want to post my status in facebook and verify it on the home screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Post Status]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="teardown" is-config="true" duration-ms="263" started-at="2021-11-16T19:44:40Z" finished-at="2021-11-16T19:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.wallethub.testfactory.TestRunner@6c3708b3]" name="tearDownClass" is-config="true" duration-ms="416" started-at="2021-11-16T19:44:40Z" finished-at="2021-11-16T19:44:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.wallethub.testfactory.TestRunner -->
+    </test> <!-- Test Basics 1 -->
+  </suite> <!-- Practice Suite -->
+</testng-results>

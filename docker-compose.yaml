@@ -1,0 +1,37 @@
+version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:3.141.59
+    container_name: selenium-hub
+    restart: always
+    ports:
+      - "4444:4444"
+    environment:
+      - GRID_MAX_SESSION=5
+      - GRID_BROWSER_TIMEOUT=1000
+      - GRID_TIMEOUT=1000  
+  chrome:
+    image: selenium/node-chrome-debug:latest
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=selenium-hub
+      - HUB_PORT_4444_TCP_PORT=4444
+      - NODE_MAX_SESSION=2
+      - NODE_MAX_INSTANCES=2
+    restart: on-failure:3
+  firefox:
+    image: selenium/node-firefox-debug:latest
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=selenium-hub
+      - HUB_PORT_4444_TCP_PORT=4444
+      - NODE_MAX_SESSION=2
+      - NODE_MAX_INSTANCES=2
+    restart: on-failure:3
+    

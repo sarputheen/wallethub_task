@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Practice Suite]">
+  <test thread-count="2" name="Test Basics 1(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="com.wallethub.testfactory.TestRunner">
+        <methods>
+          <include name="driverInit"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.wallethub.testfactory.TestRunner -->
+    </classes>
+  </test> <!-- Test Basics 1(failed) -->
+</suite> <!-- Failed suite [Practice Suite] -->
